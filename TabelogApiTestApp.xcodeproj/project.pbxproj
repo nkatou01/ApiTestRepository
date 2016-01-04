@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1CCDB39F460ECC0202C89FB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B974A7F472C79FF3DAC4BEA /* Pods.framework */; };
 		EE1D98451C3A5E98000C1CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D98441C3A5E98000C1CBB /* AppDelegate.swift */; };
 		EE1D98471C3A5E98000C1CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D98461C3A5E98000C1CBB /* ViewController.swift */; };
 		EE1D984A1C3A5E98000C1CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1D98481C3A5E98000C1CBB /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B974A7F472C79FF3DAC4BEA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A436C4F08CB4905CEDE90844 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E91917C98D9696E68FCD8CC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EE1D98411C3A5E98000C1CBB /* TabelogApiTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabelogApiTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1D98441C3A5E98000C1CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE1D98461C3A5E98000C1CBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CCDB39F460ECC0202C89FB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65F5FAD02C2F116B1A47EC84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A436C4F08CB4905CEDE90844 /* Pods.debug.xcconfig */,
+				E91917C98D9696E68FCD8CC1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE1D98381C3A5E97000C1CBB = {
 			isa = PBXGroup;
 			children = (
 				EE1D98431C3A5E98000C1CBB /* TabelogApiTestApp */,
 				EE1D98421C3A5E98000C1CBB /* Products */,
+				65F5FAD02C2F116B1A47EC84 /* Pods */,
+				F4D6CC37B0EA13259A340C8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = TabelogApiTestApp;
 			sourceTree = "<group>";
 		};
+		F4D6CC37B0EA13259A340C8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B974A7F472C79FF3DAC4BEA /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE1D98531C3A5E98000C1CBB /* Build configuration list for PBXNativeTarget "TabelogApiTestApp" */;
 			buildPhases = (
+				E86CD42F176D318CA5D10434 /* Check Pods Manifest.lock */,
 				EE1D983D1C3A5E98000C1CBB /* Sources */,
 				EE1D983E1C3A5E98000C1CBB /* Frameworks */,
 				EE1D983F1C3A5E98000C1CBB /* Resources */,
+				ED086AF12499882D80AD5E93 /* Embed Pods Frameworks */,
+				268330D52BAE9DF33E67AE9A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					EE1D98401C3A5E98000C1CBB = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J9SWLCATR5;
 					};
 				};
 			};
@@ -129,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		268330D52BAE9DF33E67AE9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E86CD42F176D318CA5D10434 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED086AF12499882D80AD5E93 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE1D983D1C3A5E98000C1CBB /* Sources */ = {
@@ -245,22 +321,26 @@
 		};
 		EE1D98541C3A5E98000C1CBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A436C4F08CB4905CEDE90844 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TabelogApiTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.creativehope.TabelogApiTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.creativehope.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		EE1D98551C3A5E98000C1CBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91917C98D9696E68FCD8CC1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TabelogApiTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.creativehope.TabelogApiTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.creativehope.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -284,6 +364,7 @@
 				EE1D98551C3A5E98000C1CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
