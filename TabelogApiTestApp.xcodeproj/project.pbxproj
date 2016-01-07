@@ -13,6 +13,9 @@
 		EE1D984A1C3A5E98000C1CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1D98481C3A5E98000C1CBB /* Main.storyboard */; };
 		EE1D984C1C3A5E98000C1CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1D984B1C3A5E98000C1CBB /* Assets.xcassets */; };
 		EE1D984F1C3A5E98000C1CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1D984D1C3A5E98000C1CBB /* LaunchScreen.storyboard */; };
+		EE622B301C3B6535000379EB /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE622B2F1C3B6535000379EB /* CustomViewCell.swift */; };
+		EE622B321C3B7E63000379EB /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE622B311C3B7E63000379EB /* CustomViewCell.xib */; };
+		EE622B341C3BC91A000379EB /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE622B331C3BC91A000379EB /* AreaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		EE1D984B1C3A5E98000C1CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1D984E1C3A5E98000C1CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE1D98501C3A5E98000C1CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE622B2F1C3B6535000379EB /* CustomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		EE622B311C3B7E63000379EB /* CustomViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
+		EE622B331C3BC91A000379EB /* AreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +78,13 @@
 			children = (
 				EE1D98441C3A5E98000C1CBB /* AppDelegate.swift */,
 				EE1D98461C3A5E98000C1CBB /* ViewController.swift */,
+				EE622B311C3B7E63000379EB /* CustomViewCell.xib */,
 				EE1D98481C3A5E98000C1CBB /* Main.storyboard */,
 				EE1D984B1C3A5E98000C1CBB /* Assets.xcassets */,
 				EE1D984D1C3A5E98000C1CBB /* LaunchScreen.storyboard */,
 				EE1D98501C3A5E98000C1CBB /* Info.plist */,
+				EE622B2F1C3B6535000379EB /* CustomViewCell.swift */,
+				EE622B331C3BC91A000379EB /* AreaViewController.swift */,
 			);
 			path = TabelogApiTestApp;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1D984F1C3A5E98000C1CBB /* LaunchScreen.storyboard in Resources */,
+				EE622B321C3B7E63000379EB /* CustomViewCell.xib in Resources */,
 				EE1D984C1C3A5E98000C1CBB /* Assets.xcassets in Resources */,
 				EE1D984A1C3A5E98000C1CBB /* Main.storyboard in Resources */,
 			);
@@ -212,7 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1D98471C3A5E98000C1CBB /* ViewController.swift in Sources */,
+				EE622B301C3B6535000379EB /* CustomViewCell.swift in Sources */,
 				EE1D98451C3A5E98000C1CBB /* AppDelegate.swift in Sources */,
+				EE622B341C3BC91A000379EB /* AreaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TabelogApiTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.creativehope.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TabelogApiTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.creativehope.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
