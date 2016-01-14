@@ -21,12 +21,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LTB-Vx-Jt3">
                                 <rect key="frame" x="-8" y="0.0" width="336" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textField key="tableFooterView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="BRB-fX-tyW">
-                                    <rect key="frame" x="0.0" y="64" width="336" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="xjM-oC-wbt"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gsZ-yS-YkV"/>
@@ -38,6 +32,8 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="LTB-Vx-Jt3" secondAttribute="trailing" constant="-24" id="DpZ-gW-lnH"/>
                             <constraint firstItem="LTB-Vx-Jt3" firstAttribute="top" secondItem="QOT-qZ-DFF" secondAttribute="topMargin" id="SzH-YK-fsV"/>
+                            <constraint firstItem="GXb-e3-7wO" firstAttribute="top" secondItem="LTB-Vx-Jt3" secondAttribute="bottom" id="Ufk-gA-1Pp"/>
+                            <constraint firstItem="LTB-Vx-Jt3" firstAttribute="top" secondItem="QOT-qZ-DFF" secondAttribute="topMargin" id="f6z-Xp-BOh"/>
                             <constraint firstItem="LTB-Vx-Jt3" firstAttribute="leading" secondItem="QOT-qZ-DFF" secondAttribute="leadingMargin" constant="-24" id="nh8-Hy-P9g"/>
                             <constraint firstItem="GXb-e3-7wO" firstAttribute="top" secondItem="LTB-Vx-Jt3" secondAttribute="bottom" id="wK1-Zo-FGL"/>
                         </constraints>
@@ -47,7 +43,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="tableView" destination="LTB-Vx-Jt3" id="ylX-oB-0VI"/>
-                        <outlet property="textField" destination="BRB-fX-tyW" id="lhG-Rh-M8A"/>
                         <segue destination="Oep-YJ-0nH" kind="push" identifier="pushAreaView" id="ZYQ-CP-CEp"/>
                     </connections>
                 </viewController>
@@ -55,11 +50,10 @@
             </objects>
             <point key="canvasLocation" x="1039" y="290"/>
         </scene>
-        <!--Area View Controller-->
+        <!--AreaView-->
         <scene sceneID="eI5-ld-gmu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m9t-EK-Eag" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="AreaView" id="Oep-YJ-0nH" customClass="AreaViewController" customModule="TabelogApiTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AreaView" title="AreaView" id="Oep-YJ-0nH" customClass="AreaViewController" customModule="TabelogApiTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HPX-cp-iYV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,15 +64,36 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="AreaTableView" destination="HPX-cp-iYV" id="AFj-GR-FUQ"/>
+                        <segue destination="bUz-Cf-YKe" kind="push" identifier="pushPrefView" id="uta-3C-8lb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9t-EK-Eag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1538" y="290"/>
+        </scene>
+        <!--PrefView-->
+        <scene sceneID="fQg-AR-lqA">
+            <objects>
+                <viewController storyboardIdentifier="prefViewID" title="PrefView" id="bUz-Cf-YKe" customClass="PrefViewController" customModule="TabelogApiTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ki1-Qz-Cwo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Gvl-Qd-fjO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="prefTableView" destination="Ki1-Qz-Cwo" id="t9b-vo-2Hu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aih-JN-huT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2036" y="290"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="up8-hN-YRD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gu2-ub-rYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c8K-ol-pZn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -92,6 +107,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xr7-YL-wVh"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gu2-ub-rYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="564" y="290"/>
         </scene>

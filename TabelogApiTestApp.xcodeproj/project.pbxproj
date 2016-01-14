@@ -16,6 +16,7 @@
 		EE622B301C3B6535000379EB /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE622B2F1C3B6535000379EB /* CustomViewCell.swift */; };
 		EE622B321C3B7E63000379EB /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE622B311C3B7E63000379EB /* CustomViewCell.xib */; };
 		EE622B341C3BC91A000379EB /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE622B331C3BC91A000379EB /* AreaViewController.swift */; };
+		EE622B361C3E354D000379EB /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE622B351C3E354D000379EB /* PrefViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EE622B2F1C3B6535000379EB /* CustomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		EE622B311C3B7E63000379EB /* CustomViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		EE622B331C3BC91A000379EB /* AreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		EE622B351C3E354D000379EB /* PrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				EE1D98501C3A5E98000C1CBB /* Info.plist */,
 				EE622B2F1C3B6535000379EB /* CustomViewCell.swift */,
 				EE622B331C3BC91A000379EB /* AreaViewController.swift */,
+				EE622B351C3E354D000379EB /* PrefViewController.swift */,
 			);
 			path = TabelogApiTestApp;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE622B361C3E354D000379EB /* PrefViewController.swift in Sources */,
 				EE1D98471C3A5E98000C1CBB /* ViewController.swift in Sources */,
 				EE622B301C3B6535000379EB /* CustomViewCell.swift in Sources */,
 				EE1D98451C3A5E98000C1CBB /* AppDelegate.swift in Sources */,
